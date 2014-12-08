@@ -4,7 +4,7 @@
 //
 //  Created by Cameron Dershem on 9/10/14.
 //  Copyright (c) 2014 Cameron Dershem. All rights reserved.
-//
+//  Adapted by Nick Lewis
 
 import UIKit
 
@@ -18,19 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // setup dropbox
+        // TODO: add my own keys here
         let dbSession = DBSession(appKey: "ty5kixasdbgkv8x", appSecret: "22cisqicel37gme", root: kDBRootAppFolder)
         
         DBSession.setSharedSession(dbSession)
         
-        // set up parse for testing
-//        Parse.setApplicationId("biYrAsTEvW7bnVjcruzax7Nqqb8la2oD5GzoEyG2", clientKey: "JhRbQfHK90qVbefxPPsjuKltt3rD3bjwF5MOpkAp")
-        
-        // elevenfifty for realzies
+        // setup Parse.com
+        // TODO: add my own keys here
         Parse.setApplicationId("T1cb1yFelU8TAZYqHFk1JMBc0hunnb4ePOOJuSb5", clientKey: "ssdWbqBmUXhIOmvxi6lZnJfnGfIXnPea5sK2ic2Z")
         
-//        var testObject = PFObject(className: "TestObject")
-//        testObject["foo"] = "bar"
-//        testObject.saveInBackground()
+        // TODO: activate the code below if I want to write a test object to the system
+        //        var testObject = PFObject(className: "TestObject")
+        //        testObject["foo"] = "bar"
+        //        testObject.saveInBackground()
         
         return true
     }
